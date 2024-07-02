@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px; /* ajuste conforme necessário */
+}
+
+.titulo {
+    flex: 1; /* ocupa o espaço restante */
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-hamburguer {
+    display: none; /* ocultar por padrão em telas maiores */
+}
+
+.menu-hamburguer .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+}
+
+.menu-hamburguer .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hamburguer .menu ul li {
+    padding: 10px;
+}
+
+.menu-hamburguer .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.menu-hamburguer .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-hamburguer {
+        display: block; /* exibir o menu de hambúrguer em telas menores */
+    }
+
+    .menu-hamburguer .menu-icon {
+        display: block;
+    }
+    
+    .menu-hamburguer .menu {
+        position: static;
+        display: block;
+        width: 100%;
+        margin-top: 10px; /* ajuste conforme necessário */
+    }
+
+    .menu-hamburguer .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-hamburguer .menu ul li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .titulo {
+        display: none; /* ocultar o título em telas menores */
+    }
+}
