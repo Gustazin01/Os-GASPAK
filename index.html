@@ -1,45 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exemplo de Div com Imagem de Fundo e Divs Internas Separadas</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<div class="background-image">
-  <div class="container">
-    <div class="inner-div">
-      <h2>Div Interna 1</h2>
-      <p>info 1</p>
-    </div>
-    <div class="iner-div">
-      <h3>Div Interna 2</h3>
-      <p>Conteúdo da segunda div interna.</p>
-    </div>
-  </div>
-</div>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div Final do Site</title>
+    <title>Agrinho</title>
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <div class="final-section">
-        <img src="caminho/para/sua/foto.jpg" alt="Foto de perfil" class="profile-img">
-        <div class="info">
-            <h2>Do campo a cidade</h2>
-            <p>Descrição breve do site.</p>
-            <ul>
-                <li><strong>E-mail:</strong> exemplo@email.com</li>
-                <li><strong>Telefone:</strong> (XX) XXXX-XXXX</li>
-                <li><strong>Endereço:</strong> Rua Exemplo, 1234</li>
-            </ul>
+    <header>
+        <div class="logo">
+            <img src="agricultura.png" alt="Logo">
+        </div>
+        <div class="titulo">
+            <h1>Do Campo a Cidade</h1>
+        </div>
+        <input type="checkbox" id="menu-alterna">
+        <label for="menu-alterna" class="hamburger">&#9776;</label>
+        <nav class="menu">
+            <a href="#introdução">introdução</a>
+            <a href="#video">Sobre</a>
+            <a href="#Referencia">Referencia</a>
+            <a href="#duvidas">Duvidas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="introdução">
+        <div class="info-section">
+            <div class="info-box info-left">
+                <h2 style="font-size: 22px; text-align:  justify;"> A soja é uma importante fonte de proteína vegetal,
+                    fundamental para a produção de carnes, ovos e laticínios, devido ao seu custo-benefício. Com a
+                    crescente demanda por proteína animal, especialmente na Ásia, a soja garante não só preços
+                    acessíveis aos brasileiros, mas também contribui para a segurança alimentar global.
+                </h2>
+            </div>
+            <div class="info-box info-right">
+                <h2 style="font-size: 22px ; text-align: justify;">A expansão da soja no Brasil começou nos anos 1970,
+                    impulsionada pela ampliação da indústria de óleo e pela crescente demanda internacional pelo grão.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="video-section">
+            <div class="video-box">
+
+                <video controls>
+                    <source src="video/O RANKING_ QUEM TEM MAIS SEGUIDORES.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="video-info info-box">
+                <h2>Informações do Vídeo</h2>
+                <p>Texto adicional sobre o vídeo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Referencia">
+        <div class="three-info-section">
+            <h2 style="font-size: 40px;">Empresas Referencia</h2>
+            <div class="content-wrapper">
+                <div class="box1">
+                    <h3>COAMO</h3>
+                    <p>A Coamo é uma das maiores cooperativas agroindustriais da América Latina, fundada em 1970 em
+                        Campo Mourão, Paraná, Brasil. Reunindo milhares de produtores rurais, a cooperativa se destaca
+                        na produção e processamento de grãos como soja, milho e trigo, além de comercializar esses
+                        produtos no mercado interno e externo.
+                        A Coamo também investe em tecnologia avançada para rastreamento e gerenciamento de estoques,
+                        otimizando o fluxo de produtos e reduzindo custos operacionais.
+                        A gestão de projetos logísticos da cooperativa é um diferencial, com planejamento estratégico e
+                        execução eficiente que garantem a qualidade e a pontualidade na entrega dos produtos,
+                        consolidando a Coamo como líder no setor agroindustrial.</p>
+                </div>
+                <div class="box2">
+                    <h3>AMAGGI</h3>
+                    <p>A Amaggi é uma das maiores empresas do agronegócio brasileiro, fundada em 1977 em Sapezal, Mato
+                        Grosso. Atua na produção, comercialização e exportação de grãos como soja, milho e algodão, além
+                        de operar no setor de energia e logística.
+                        A logística da Amaggi é altamente eficiente, com uma rede de transporte que inclui frota própria
+                        de caminhões, barcaças para transporte fluvial e terminais portuários estrategicamente
+                        localizados.
+                        A empresa também investe em tecnologia para otimizar o rastreamento e o gerenciamento de seus
+                        estoques, garantindo eficiência, redução de custos e pontualidade na entrega de produtos, o que
+                        a destaca como uma líder no agronegócio.</p>
+                </div>
+                <div class="box3">
+                    <h3>SLC AGRICOLA</h3>
+                    <p>A SLC Agrícola é uma das principais empresas agrícolas do Brasil, fundada em 1977. A companhia é
+                        especializada na produção de soja, milho e algodão em larga escala, com operações em várias
+                        regiões do país.
+                        A logística da SLC Agrícola é um diferencial, com uma infraestrutura que inclui uma extensa rede
+                        de transporte, silos e armazéns estrategicamente posicionados.
+                        A empresa também adota tecnologias avançadas para rastreamento e gestão de estoques, o que
+                        melhora a eficiência operacional, reduz custos e assegura a entrega pontual de seus produtos,
+                        consolidando sua posição de destaque no setor agrícola.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="duvidas">
+        <div class="faq-section">
+            <h2 style="font-size: 40px;">Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <input type="radio" id="faq1-toggle" name="faq-toggle" checked>
+                <label for="faq1-toggle" class="faq-question">Qual o maior produtor de soja do mundo?</label>
+                <div id="faq1" class="faq-answer">
+                    O maior produtor de soja do mundo é o Brasil. Em termos de produção, o Brasil ultrapassou os Estados
+                    Unidos em anos recentes e se tornou o principal produtor global de soja. A soja é uma cultura de
+                    grande importância econômica para o Brasil, com vastas áreas cultivadas especialmente nos estados do
+                    Centro-Oeste e Sul do país.
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="radio" id="faq2-toggle" name="faq-toggle">
+                <label for="faq2-toggle" class="faq-question">Até que ponto a soja geneticamente modificada é segura
+                    para o consumo humano e para o ambiente?</label>
+                <div id="faq2" class="faq-answer">
+                    A segurança da soja geneticamente modificada (GM) é extensivamente avaliada por agências
+                    regulatórias como a FDA e a EFSA. Antes de aprovação, a soja GM passa por testes rigorosos de
+                    segurança alimentar, incluindo análises nutricionais, alergenicidade e efeitos tóxicos. Além disso,
+                    a soja GM pode reduzir o uso de agroquímicos, diminuindo a contaminação ambiental por pesticidas e
+                    herbicidas.
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="radio" id="faq3-toggle" name="faq-toggle">
+                <label for="faq3-toggle" class="faq-question">Como a expansão da produção de soja está impactando o meio
+                    ambiente globalmente?</label>
+                <div id="faq3" class="faq-answer">
+                    A expansão da produção de soja impacta o meio ambiente globalmente através do desmatamento, que
+                    causa perda de biodiversidade e libera carbono, e do esgotamento de recursos hídricos, afetando
+                    biodiversidade e comunidades humanas. No entanto, a soja também contribui para a segurança alimentar
+                    como uma importante fonte de proteína vegetal e impulsiona o desenvolvimento econômico, criando
+                    empregos e promovendo o crescimento local e nacional.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="four-info-section">
+        <div class="info-column">
+            <div class="info-box">
+                <p>O tempo entre o plantio e a colheita de soja varia entre as regiões. Mas geralmente a soja fica apta
+                    ao consumo no prazo de 90 a 120 dias.</p>
+            </div>
+            <img style="width: 80%; border-radius: 10px; margin-left: 9.3% ;" src="agro.jpg" alt="Imagem 1"
+                class="info-image">
+        </div>
+        <div class="info-column">
+            <img style="width: 80%; border-radius: 10px; margin-left: 9.3%;" src="agro.jpg" alt="Imagem 2"
+                class="info-image">
+            <div class="info-box">
+                <p>A soja é rica em vitaminas, como A e C, e minerais, como cálcio e fósforo. Esses componentes fazem
+                    com que o alimento tenha a capacidade de fortalecer a pele e cabelos porque estimula a produção de
+                    ácido hialurônico e colágeno, além de beneficiar a saúde dos ossos, prevenindo doenças como a
+                    osteoporose.</p>
+            </div>
         </div>
     </div>
 
+    <footer>
+        <section id="contato">
+            <div class="footer-content">
+                <div class="social-media">
+                    <h2>Siga-nos</h2>
+                    <a href="" target="_blank">
+                        <img src="TikTok.png" alt="Tik Tok">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="twitter.png" alt="Twitter">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                </div>
+                <div class="credits">
+                    <h2>Feito por</h2>
+                    <p>STUDIOS Gaspak</p>
+                </div>
+                <div class="contact-info">
+                    <h2>Contato</h2>
+                    <p>Telefone: (55) 44 99873-2229</p>
+                </div>
+                <div class="support-text">
+                    <p>Obrigado por visitar nosso site! Estamos comprometidos em fornecer as melhores informações sobre
+                        agricultura. Entre em contato conosco para mais informações.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
 </body>
+
 </html>
